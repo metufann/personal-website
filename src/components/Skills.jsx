@@ -63,7 +63,7 @@ const Skills = () => {
             variants={itemVariants} 
             className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-gray-800 dark:text-white"
           >
-            Skills & Technologies
+            {t('skills.title')}
           </motion.h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">

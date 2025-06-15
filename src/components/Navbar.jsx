@@ -5,7 +5,10 @@ import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    const savedMode = localStorage.getItem('darkMode');
+    return savedMode === 'true' ? true : false;
+  });
   const [activeSection, setActiveSection] = useState('home');
   const { t, i18n } = useTranslation();
 
@@ -36,9 +39,19 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [navItems]);
 
+  useEffect(() => {
+    // Apply dark mode class on initial load based on localStorage
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDark]);
+
   const toggleDarkMode = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
+    const newIsDark = !isDark;
+    setIsDark(newIsDark);
+    localStorage.setItem('darkMode', newIsDark);
   };
 
   const handleLanguageChange = (lng) => {

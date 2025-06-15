@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const { t } = useTranslation();
   const socialLinks = [
-    { icon: <FiGithub />, href: 'https://github.com/yourusername' },
-    { icon: <FiLinkedin />, href: 'https://linkedin.com/in/yourusername' },
-    { icon: <FiTwitter />, href: 'https://twitter.com/yourusername' },
+    { icon: <FiGithub />, href: 'https://github.com/metufann' },
+    { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/metufann/' },
   ];
 
   return (
