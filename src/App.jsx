@@ -9,14 +9,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 function App() {
-  useEffect(() => {
-    // Check for saved theme preference
-    const isDark = localStorage.getItem('darkMode') === 'true';
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
-
   return (
     <>
       <Helmet>

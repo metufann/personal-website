@@ -7,7 +7,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(() => {
     const savedMode = localStorage.getItem('darkMode');
-    return savedMode === 'true' ? true : false;
+    if (savedMode === null) {
+      return true; // Default to dark mode if no preference is saved
+    }
+    return savedMode === 'true'; // Use the saved preference
   });
   const [activeSection, setActiveSection] = useState('home');
   const { t, i18n } = useTranslation();
