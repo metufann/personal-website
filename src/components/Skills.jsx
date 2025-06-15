@@ -61,19 +61,19 @@ const Skills = () => {
         >
           <motion.h2 
             variants={itemVariants} 
-            className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white"
+            className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-gray-800 dark:text-white"
           >
             Skills & Technologies
           </motion.h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
             {skills.map((skill, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow duration-300"
+                className="bg-white dark:bg-gray-800 p-4 xs:p-6 rounded-xl shadow-lg flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow duration-300"
               >
-                <span className="text-4xl text-blue-600 dark:text-blue-400 mb-3">{skill.icon}</span>
+                <span className="text-3xl xs:text-4xl text-blue-600 dark:text-blue-400 mb-2 xs:mb-3">{skill.icon}</span>
                 <span className="font-semibold text-gray-700 dark:text-gray-200">{skill.name}</span>
               </motion.div>
             ))}

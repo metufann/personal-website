@@ -34,12 +34,12 @@ function App() {
       <div className="min-h-screen bg-white dark:bg-primary transition-colors duration-300">
         <Navbar />
         <main>
-          <Hero id="home" className="scroll-mt-32" />
-          <About id="about" className="scroll-mt-32" />
-          <Skills id="skills" className="scroll-mt-32" />
-          <Experience id="experience" className="scroll-mt-32" />
-          <Projects id="projects" className="scroll-mt-32" />
-          <Contact id="contact" className="scroll-mt-32" />
+          <Hero id="home" />
+          <About id="about" />
+          <Skills id="skills" />
+          <Experience id="experience" />
+          <Projects id="projects" />
+          <Contact id="contact" />
         </main>
       </div>
     </>

@@ -11,7 +11,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center section-padding">
+    <section id="home" className="min-h-screen flex items-center justify-center section-padding pt-16">
       <div className="container mx-auto container-padding">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
@@ -19,10 +19,10 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
               {t('hero.hi')} <span className="text-secondary">Muhammet Emin Tufan</span>
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-600 dark:text-textSecondary mb-6">
+            <h2 className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-textSecondary mb-6">
               {t('hero.title')}
             </h2>
             <p className="text-gray-600 dark:text-textSecondary mb-8 max-w-lg">
@@ -35,7 +35,7 @@ const Hero = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl sm:text-2xl text-gray-600 dark:text-textSecondary hover:text-secondary dark:hover:text-secondary transition-colors"
+                  className="text-xl text-gray-600 dark:text-textSecondary hover:text-secondary dark:hover:text-secondary transition-colors"
                   whileHover={{ y: -3 }}
                   whileTap={{ scale: 0.95 }}
                 >

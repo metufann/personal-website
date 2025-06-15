@@ -43,32 +43,30 @@ const Contact = () => {
             {t('contact.title')}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <motion.div variants={itemVariants} className="space-y-6">
-              <motion.div variants={itemVariants} className="bg-white dark:bg-primary p-6 rounded-lg shadow-lg space-y-6">
-                <a
-                  href="mailto:muhammedemintufan@gmail.com"
-                  className="flex items-center space-x-4 hover:bg-gray-50 dark:hover:bg-tertiary p-4 rounded-lg transition-colors -m-4"
-                >
-                  <div className="p-3 bg-secondary bg-opacity-10 rounded-full">
-                    <FiMail className="w-6 h-6 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">{t('contact.contactInfo.email.title')}</h3>
-                    <p className="text-gray-600 dark:text-textSecondary">{t('contact.contactInfo.email.value')}</p>
-                  </div>
-                </a>
-
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-secondary bg-opacity-10 rounded-full">
-                    <FiMapPin className="w-6 h-6 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">{t('contact.contactInfo.location.title')}</h3>
-                    <p className="text-gray-600 dark:text-textSecondary">{t('contact.contactInfo.location.value')}</p>
-                  </div>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <motion.div variants={itemVariants} className="bg-white dark:bg-primary p-6 rounded-lg shadow-lg space-y-6">
+              <a
+                href="mailto:muhammedemintufan@gmail.com"
+                className="flex items-center space-x-4 hover:bg-gray-50 dark:hover:bg-tertiary p-4 rounded-lg transition-colors -m-4"
+              >
+                <div className="p-3 bg-secondary bg-opacity-10 rounded-full">
+                  <FiMail className="w-6 h-6 text-secondary" />
                 </div>
-              </motion.div>
+                <div>
+                  <h3 className="font-semibold">{t('contact.contactInfo.email.title')}</h3>
+                  <p className="text-gray-600 dark:text-textSecondary">{t('contact.contactInfo.email.value')}</p>
+                </div>
+              </a>
+
+              <div className="flex items-center space-x-4">
+                <div className="p-3 bg-secondary bg-opacity-10 rounded-full">
+                  <FiMapPin className="w-6 h-6 text-secondary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">{t('contact.contactInfo.location.title')}</h3>
+                  <p className="text-gray-600 dark:text-textSecondary">{t('contact.contactInfo.location.value')}</p>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div variants={itemVariants} className="bg-white dark:bg-primary p-6 rounded-lg shadow-lg">

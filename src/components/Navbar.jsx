@@ -57,11 +57,11 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed w-full bg-white dark:bg-primary shadow-md z-50"
+      className="fixed w-full h-16 bg-white dark:bg-primary shadow-md z-50"
     >
       <div className="container-padding mx-auto">
-        <div className="flex justify-between items-center py-0.5">
-          <a href="#home" className="text-[0.65rem] xs:text-lg font-bold text-secondary">
+        <div className="flex justify-between items-center py-2">
+          <a href="#home" className="text-sm xs:text-base sm:text-lg font-bold text-secondary">
             Portfolio
           </a>
 
@@ -96,11 +96,11 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Navigation Button */}
-          <div className="md:hidden flex items-center gap-x-1 px-0.5">
+          <div className="md:hidden flex items-center gap-x-3">
             <select
               onChange={e => handleLanguageChange(e.target.value)}
               value={i18n.language}
-              className="px-0 py-0 rounded bg-gray-100 dark:bg-tertiary text-xs"
+              className="px-2 py-1 rounded bg-gray-100 dark:bg-tertiary text-sm"
               aria-label={t('navbar.language')}
             >
               <option value="en">EN</option>
@@ -108,15 +108,15 @@ const Navbar = () => {
             </select>
             <button
               onClick={toggleDarkMode}
-              className="p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-tertiary"
+              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-tertiary"
             >
-              {isDark ? <FiSun className="w-4 h-4" /> : <FiMoon className="w-4 h-4" />}
+              {isDark ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-tertiary"
+              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-tertiary"
             >
-              {isOpen ? <FiX className="w-4 h-4" /> : <FiMenu className="w-4 h-4" />}
+              {isOpen ? <FiX className="w-5 h-5" /> : <FiMenu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -126,9 +126,9 @@ const Navbar = () => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden"
+            className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-primary shadow-lg py-2"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-4 py-2 space-y-1">
               {navItems.map((item) => (
                 <a
                   key={item.key}
