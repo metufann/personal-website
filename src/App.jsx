@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Your Name - Full Stack Developer</title>
+        <title>Muhammet Emin Tufan - Full Stack Developer</title>
         <meta name="description" content="Full Stack Developer specializing in React, Node.js, and modern web technologies. View my portfolio of projects and get in touch." />
         <meta name="keywords" content="Full Stack Developer, React, Node.js, JavaScript, Web Development, Portfolio" />
         <meta property="og:title" content="Your Name - Full Stack Developer" />

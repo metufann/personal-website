@@ -1,0 +1,134 @@
+{
+  "navbar": {
+    "home": "Anasayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "experience": "Deneyim",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "language": "Dil"
+  },
+  "hero": {
+    "hi": "Merhaba, ben",
+    "title": "Full Stack Geliştirici",
+    "intro": "Modern web teknolojileri ve yazılım geliştirme konusunda deneyimli, tutkulu bir Full Stack geliştiriciyim. React, Java ve Spring Boot ile kullanıcı odaklı çözümler geliştiriyorum.",
+    "getInTouch": "İletişime Geç"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "paragraph1": "Yazılım geliştirme yolculuğumda sürekli öğrenme ve gelişme odaklıyım. Full Stack geliştirme konusunda hem frontend hem de backend teknolojilerinde deneyim kazandım.",
+    "paragraph2": "Modern web teknolojileri ve yazılım geliştirme araçları konusunda uzmanım. React ve Spring Boot kullanarak ölçeklenebilir ve kullanıcı dostu uygulamalar geliştiriyorum.",
+    "paragraph3": "Temiz kod yazma, çevik metodolojiler ve sürekli öğrenme prensiplerine bağlıyım. Zorlu projelerde başarılı olmak için yeni teknolojileri öğrenmeye ve uygulamaya hevesliyim.",
+    "stats": {
+      "yearsExperience": "Yıl Deneyim",
+      "projectsCompleted": "Tamamlanan Proje",
+      "companiesWorked": "Çalışılan Şirket",
+      "happyClients": "Mutlu Müşteri"
+    }
+  },
+  "skills": {
+    "title": "Yetenekler & Teknolojiler",
+    "skills": {
+      "javascript": "JavaScript",
+      "java": "Java",
+      "springboot": "Spring Boot",
+      "html": "HTML",
+      "css": "CSS",
+      "python": "Python",
+      "mysql": "MySQL"
+    }
+  },
+  "experience": {
+    "title": "İş Deneyimi",
+    "categories": {
+      "professional": "Profesyonel Deneyim",
+      "handsOn": "Uygulamalı Deneyim",
+      "volunteer": "Gönüllü Deneyim"
+    },
+    "jobs": {
+      "nextarpInternship": {
+        "title": "Full Stack Stajyer",
+        "company": "Nextarp",
+        "period": "2024 - Günümüz",
+        "description": [
+          "React ve Spring Boot kullanarak web uygulamalarının geliştirilmesine katkıda bulunuyorum",
+          "Veritabanı tasarımı ve API entegrasyonu konularında çalışıyorum",
+          "Çevik geliştirme metodolojileri ile ekip çalışması deneyimi kazanıyorum"
+        ]
+      },
+      "t3VakfiTeaching": {
+        "title": "Yazılım Eğitmeni",
+        "company": "T3 Vakfı",
+        "period": "2024 - 2025",
+        "description": [
+          "Robotik ve programlama eğitimi veriyorum",
+          "Öğrencilere temel programlama kavramlarını öğretiyorum",
+          "Pratik projeler ve uygulamalı eğitimler düzenliyorum"
+        ]
+      },
+      "goktasAgvTeknofest": {
+        "title": "Takım Kaptanı ve Yazılımcı",
+        "company": "Göktaş AGV Teknofest Takımı",
+        "period": "2022 - 2025",
+        "description": [
+          "Teknofest yarışmaları için otonom araç yazılımı geliştiriyorum",
+          "Takım liderliği ve proje yönetimi sorumluluklarını üstleniyorum",
+          "Yazılım mimarisi ve sistem tasarımı konularında çalışıyorum"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Projeler",
+    "items": {
+      "trainingRoster": {
+        "title": "Training Roster",
+        "description": "Spor yönetim sistemi olarak geliştirdiğimiz bu proje, antrenman programlarının ve sporcu takiplerinin yönetimini sağlıyor. React, Spring Boot ve MySQL kullanılarak geliştirildi.",
+        "technologies": [
+          "React",
+          "Spring Boot",
+          "MySQL",
+          "REST API"
+        ]
+      },
+      "goktasAgv": {
+        "title": "Göktaş AGV",
+        "description": "Teknofest yarışmaları için geliştirilen otonom araç projesi. React ile kullanıcı arayüzü ve C++ ile kontrol sistemleri geliştirdim.",
+        "technologies": [
+          "React",
+          "C++",
+          "Robotik",
+          "Sensör Entegrasyonu"
+        ]
+      },
+      "hrManagementSystem": {
+        "title": "HR Management System",
+        "description": "İnsan kaynakları yönetimi için geliştirilen kapsamlı bir sistem. Çalışan bilgileri, izin takibi ve bordro yönetimi gibi modüller içeriyor.",
+        "technologies": [
+          "React",
+          "Java",
+          "Spring Boot",
+          "MySQL"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "contactInfo": {
+      "email": {
+        "title": "E-posta",
+        "value": "muhammedemintufan@gmail.com"
+      },
+      "location": {
+        "title": "Konum",
+        "value": "İstanbul, Türkiye"
+      }
+    },
+    "mailto": {
+      "title": "Hadi Bağlanalım",
+      "description": "Yeni projeler, yaratıcı fikirler veya vizyonunuzun bir parçası olma fırsatları hakkında konuşmaya her zaman açığım. Benimle doğrudan e-posta yoluyla iletişime geçebilirsiniz.",
+      "button": "Bana E-posta Gönder"
+    }
+  }
+} 

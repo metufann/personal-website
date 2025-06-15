@@ -3,14 +3,14 @@ import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'react-i18next';
 import {
   SiJavascript,
-  SiReact,
-  SiNodedotjs,
+  SiSpringboot,
+  SiHtml5,
+  SiCss3,
   SiPython,
-  SiTypescript,
-  SiTailwindcss,
-  SiMongodb,
-  SiPostgresql,
+  SiMysql,
+  SiReact,
 } from 'react-icons/si';
+import { FaJava } from 'react-icons/fa';
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -20,14 +20,14 @@ const Skills = () => {
   });
 
   const skills = [
-    { name: t('skills.skills.javascript'), icon: <SiJavascript />, level: 90 },
-    { name: t('skills.skills.react'), icon: <SiReact />, level: 85 },
-    { name: t('skills.skills.nodejs'), icon: <SiNodedotjs />, level: 80 },
-    { name: t('skills.skills.python'), icon: <SiPython />, level: 75 },
-    { name: t('skills.skills.typescript'), icon: <SiTypescript />, level: 85 },
-    { name: t('skills.skills.tailwind'), icon: <SiTailwindcss />, level: 90 },
-    { name: t('skills.skills.mongodb'), icon: <SiMongodb />, level: 80 },
-    { name: t('skills.skills.postgresql'), icon: <SiPostgresql />, level: 75 },
+    { name: 'JavaScript', icon: <SiJavascript /> },
+    { name: 'Java', icon: <FaJava /> },
+    { name: 'Spring Boot', icon: <SiSpringboot /> },
+    { name: 'React', icon: <SiReact /> },
+    { name: 'HTML', icon: <SiHtml5 /> },
+    { name: 'CSS', icon: <SiCss3 /> },
+    { name: 'Python', icon: <SiPython /> },
+    { name: 'MySQL', icon: <SiMysql /> },
   ];
 
   const containerVariants = {
@@ -50,8 +50,8 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="section-padding">
-      <div className="container mx-auto container-padding">
+    <section id="skills" className="py-16">
+      <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
           variants={containerVariants}
@@ -59,65 +59,25 @@ const Skills = () => {
           animate={inView ? "visible" : "hidden"}
           className="max-w-4xl mx-auto"
         >
-          <motion.h2 variants={itemVariants} className="section-title text-center">
-            {t('skills.title')}
+          <motion.h2 
+            variants={itemVariants} 
+            className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white"
+          >
+            Skills & Technologies
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {skills.map((skill, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white dark:bg-primary p-4 rounded-lg shadow-md"
+                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-2xl text-secondary">{skill.icon}</span>
-                    <span className="font-semibold">{skill.name}</span>
-                  </div>
-                  <span className="text-sm text-gray-600 dark:text-textSecondary">
-                    {skill.level}%
-                  </span>
-                </div>
-                <div className="w-full bg-gray-200 dark:bg-tertiary rounded-full h-2">
-                  <motion.div
-                    className="bg-secondary h-2 rounded-full"
-                    initial={{ width: 0 }}
-                    animate={inView ? { width: `${skill.level}%` } : { width: 0 }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                  />
-                </div>
+                <span className="text-4xl text-blue-600 dark:text-blue-400 mb-3">{skill.icon}</span>
+                <span className="font-semibold text-gray-700 dark:text-gray-200">{skill.name}</span>
               </motion.div>
             ))}
           </div>
-
-          <motion.div
-            variants={itemVariants}
-            className="mt-12 text-center"
-          >
-            <h3 className="text-xl font-semibold mb-4">{t('skills.additionalSkills')}</h3>
-            <div className="flex flex-wrap justify-center gap-1 sm:gap-2">
-              {[
-                t('skills.skills.git'),
-                t('skills.skills.docker'),
-                t('skills.skills.aws'),
-                t('skills.skills.restApis'),
-                t('skills.skills.graphql'),
-                t('skills.skills.agile'),
-                t('skills.skills.cicd'),
-                t('skills.skills.testing'),
-                t('skills.skills.uiux'),
-                t('skills.skills.responsiveDesign')
-              ].map((skill, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1 bg-gray-100 dark:bg-tertiary rounded-full text-sm text-gray-600 dark:text-textSecondary"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>

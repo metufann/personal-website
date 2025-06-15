@@ -1,0 +1,134 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "hi": "Hi, I'm",
+    "title": "Full Stack Developer",
+    "intro": "I'm a passionate Full Stack developer with experience in modern web technologies and software development. I develop user-centric solutions using React, Java, and Spring Boot.",
+    "getInTouch": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I focus on continuous learning and development in my software development journey. I have gained experience in both frontend and backend technologies in Full Stack development.",
+    "paragraph2": "I specialize in modern web technologies and software development tools. I develop scalable and user-friendly applications using React and Spring Boot.",
+    "paragraph3": "I am committed to writing clean code, agile methodologies, and continuous learning. I am eager to learn and apply new technologies to succeed in challenging projects.",
+    "stats": {
+      "yearsExperience": "Years Experience",
+      "projectsCompleted": "Projects Completed",
+      "companiesWorked": "Companies Worked",
+      "happyClients": "Happy Clients"
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "skills": {
+      "javascript": "JavaScript",
+      "java": "Java",
+      "springboot": "Spring Boot",
+      "html": "HTML",
+      "css": "CSS",
+      "python": "Python",
+      "mysql": "MySQL"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "categories": {
+      "professional": "Professional Experience",
+      "handsOn": "Hands-on Experience",
+      "volunteer": "Volunteer Experience"
+    },
+    "jobs": {
+      "nextarpInternship": {
+        "title": "Full Stack Intern",
+        "company": "Nextarp",
+        "period": "2024 - Present",
+        "description": [
+          "Contributing to web application development using React and Spring Boot",
+          "Working on database design and API integration",
+          "Gaining team collaboration experience with agile development methodologies"
+        ]
+      },
+      "t3VakfiTeaching": {
+        "title": "Software Instructor",
+        "company": "T3 Foundation",
+        "period": "2024 - 2025",
+        "description": [
+          "Teaching robotics and programming",
+          "Instructing students in basic programming concepts",
+          "Organizing practical projects and hands-on training"
+        ]
+      },
+      "goktasAgvTeknofest": {
+        "title": "Team Captain and Developer",
+        "company": "Göktaş AGV Teknofest Team",
+        "period": "2022 - 2025",
+        "description": [
+          "Developing autonomous vehicle software for Teknofest competitions",
+          "Taking on team leadership and project management responsibilities",
+          "Working on software architecture and system design"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "items": {
+      "trainingRoster": {
+        "title": "Training Roster",
+        "description": "A sports management system we developed that manages training programs and athlete tracking. Built with React, Spring Boot, and MySQL.",
+        "technologies": [
+          "React",
+          "Spring Boot",
+          "MySQL",
+          "REST API"
+        ]
+      },
+      "goktasAgv": {
+        "title": "Göktaş AGV",
+        "description": "An autonomous vehicle project developed for Teknofest competitions. Developed user interface with React and control systems with C++.",
+        "technologies": [
+          "React",
+          "C++",
+          "Robotics",
+          "Sensor Integration"
+        ]
+      },
+      "hrManagementSystem": {
+        "title": "HR Management System",
+        "description": "A comprehensive system developed for human resources management. Includes modules for employee information, leave tracking, and payroll management.",
+        "technologies": [
+          "React",
+          "Java",
+          "Spring Boot",
+          "MySQL"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "contactInfo": {
+      "email": {
+        "title": "Email",
+        "value": "muhammedemintufan@gmail.com"
+      },
+      "location": {
+        "title": "Location",
+        "value": "Adana, Turkey"
+      }
+    },
+    "mailto": {
+      "title": "Let's Connect",
+      "description": "I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Feel free to reach out to me directly via email.",
+      "button": "Send Me an Email"
+    }
+  }
+} 
