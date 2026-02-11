@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';

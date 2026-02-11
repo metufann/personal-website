@@ -31,7 +31,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="section-padding">
+    <section id="about" className="section-padding scroll-mt-24">
       <div className="container mx-auto container-padding">
         <motion.div
           ref={ref}

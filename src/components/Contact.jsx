@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding">
+    <section id="contact" className="section-padding scroll-mt-24">
       <div className="container mx-auto container-padding">
         <motion.div
           ref={ref}

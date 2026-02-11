@@ -9,7 +9,13 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: (() => {
+        // Work around a known `globals` data typo: "AudioWorkletGlobalScope " (trailing space)
+        const g = { ...globals.browser }
+        delete g['AudioWorkletGlobalScope ']
+        g.AudioWorkletGlobalScope = false
+        return g
+      })(),
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
@@ -23,7 +29,9 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // `motion` is commonly used only in JSX as `<motion.div />` which ESLint core can
+      // incorrectly flag as unused in some setups; ignore it while keeping the rule strict.
+      'no-unused-vars': ['error', { varsIgnorePattern: '^(motion|[A-Z_])' }],
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },

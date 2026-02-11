@@ -69,7 +69,7 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="section-padding">
+    <section id="experience" className="section-padding scroll-mt-24">
       <div className="container mx-auto container-padding">
         <motion.div
           ref={ref}

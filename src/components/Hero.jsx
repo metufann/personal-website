@@ -10,7 +10,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center section-padding pt-16">
+    <section id="home" className="min-h-screen scroll-mt-24 flex items-center justify-center section-padding pt-24">
       <div className="container mx-auto container-padding">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
