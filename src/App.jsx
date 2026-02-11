@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -6,8 +8,22 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import CodeIntro from './components/CodeIntro';
 
 function App() {
+  const reducedMotion = useReducedMotion();
+  const [introDone, setIntroDone] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    if (reducedMotion) return true;
+    if (new URLSearchParams(window.location.search).get('intro') === '1') return false;
+    return sessionStorage.getItem('introSeen') === '1';
+  });
+
+  const handleIntroComplete = () => {
+    setIntroDone(true);
+    sessionStorage.setItem('introSeen', '1');
+  };
+
   return (
     <>
       <Helmet>
@@ -23,15 +39,30 @@ function App() {
       </Helmet>
 
       <div className="min-h-screen bg-white dark:bg-primary transition-colors duration-300">
-        <Navbar />
-        <main>
-          <Hero id="home" />
+        {!introDone && (
+          <CodeIntro onComplete={handleIntroComplete} reducedMotion={reducedMotion} />
+        )}
+
+        <motion.div
+          className="min-h-screen"
+          initial={introDone ? false : { scale: 0.94, opacity: 0.85 }}
+          animate={introDone ? { scale: 1, opacity: 1 } : { scale: 0.94, opacity: 0.85 }}
+          transition={
+            !reducedMotion
+              ? { type: 'spring', stiffness: 320, damping: 28, mass: 0.8 }
+              : { duration: 0 }
+          }
+        >
+          <Navbar />
+          <main>
+            <Hero id="home" />
           <About id="about" />
           <Skills id="skills" />
           <Experience id="experience" />
           <Projects id="projects" />
           <Contact id="contact" />
         </main>
+        </motion.div>
       </div>
     </>
   );

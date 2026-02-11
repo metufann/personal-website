@@ -7,6 +7,15 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      keyframes: {
+        'hero-shine-sweep': {
+          '0%': { transform: 'translateX(-100%) skewX(-12deg)' },
+          '100%': { transform: 'translateX(400%) skewX(-12deg)' },
+        },
+      },
+      animation: {
+        'hero-shine-sweep': 'hero-shine-sweep 0.6s ease-out forwards',
+      },
       colors: {
         primary: '#1a1a1a',
         secondary: '#3b82f6',

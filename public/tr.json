@@ -13,7 +13,8 @@
     "hi": "Merhaba, ben",
     "title": "Full Stack Geliştirici",
     "intro": "Modern web teknolojileri ve yazılım geliştirme konusunda deneyimli, tutkulu bir Full Stack geliştiriciyim. React, Java ve Spring Boot ile kullanıcı odaklı çözümler geliştiriyorum.",
-    "getInTouch": "İletişime Geç"
+    "getInTouch": "İletişime Geç",
+    "viewProjects": "Projeleri Görüntüle"
   },
   "about": {
     "title": "Hakkımda",

@@ -13,7 +13,8 @@
     "hi": "Hi, I'm",
     "title": "Full Stack Developer",
     "intro": "I'm a passionate Full Stack developer with experience in modern web technologies and software development. I develop user-centric solutions using React, Java, and Spring Boot.",
-    "getInTouch": "Get in Touch"
+    "getInTouch": "Get in Touch",
+    "viewProjects": "View Projects"
   },
   "about": {
     "title": "About Me",
